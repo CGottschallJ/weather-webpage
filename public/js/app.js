@@ -34,7 +34,7 @@ function fetchWeather(event) {
 	errorMessageElement.textContent = '';
 
 
-	fetch(`http://localhost:3000/weather?address=${searchQueryLocation}`)
+	fetch(`/weather?address=${searchQueryLocation}`)
 		.then((response) => {
 			return response.json();
 		})

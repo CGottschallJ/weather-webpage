@@ -163,7 +163,7 @@ app.get('*', (request, response) => {
 // -- PORT INITIALIZAITON -- //
 
 // Defining the port number
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Starting the server on the port number defined above and printing an informative message to the console.
 app.listen(port, () => {
