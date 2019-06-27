@@ -53,7 +53,7 @@ app.use(express.static(pathToPublicDirectory));
 		-> The response.render() method takes in two arguments.
 		-> The first is the name of the template that is to be rendered when this url is navigated to
 		-> The second is an object containing all values that should be passed into that template for dynamic use. */
-app.get('', (request, response) => {
+app.get('/', (request, response) => {
 	response.render('index', {
 		appName: 'Weather Application',
 		pageTitle: 'Weather',
