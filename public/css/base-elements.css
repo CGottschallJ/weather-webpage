@@ -1,0 +1,73 @@
+
+/* --- BODY --- */
+
+body {
+	background-color: #f1f0f4;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+/* --- HEADER --- */
+
+header {
+	/* Make base mobile changes to the header tag here */
+	padding: 15px; 
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 50px;
+}
+
+/* --- FOOTER --- */
+
+footer {
+	/* Make base mobile changes to the footer tags here */
+	padding: 15px; 
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 50px;
+}
+
+/* --- MAIN --- */
+
+main {
+	/* Make base mobile changes to the footer tags here */
+	padding: 15px; 
+	box-sizing: border-box;
+	margin-top: 50px; /* Height of the header */
+	width: 100vw;
+	height: calc(100vh - 100px); /* Total view height minus the height of the header and footer combined */
+}
+
+/* --- H ELEMENTS --- */
+
+h1 {
+	font-size: 20px;
+	color: #f1f0f4;
+	text-shadow: 1px 1px #524b68;
+}
+
+h2 {
+	/* Make base mobile changes to h2 tags here */
+}
+
+h3 {
+	/* Make base mobile changes to h3 tags here */
+}
+
+h4 {
+	/* Make base mobile changes to h4 tags here */
+}
+
+h5 {
+	/* Make base mobile changes to h5 tags here */
+}
+
+h6 {
+	/* Make base mobile changes to h6 tags here */
+}

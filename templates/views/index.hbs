@@ -13,12 +13,10 @@
 
 </head>
 
-<body>
+<body class="body--homepage">
 	{{>header}}
 
-	<div class="main">
-
-		<h1 class="page-title">{{pageTitle}}</h1>
+	<main class="main">
 
 		<form action="" class="address-form-block">
 			<input type="text" placeholder="Enter an address" class="address-form-block__input">
@@ -31,9 +29,14 @@
 			<p class="forecast-display-block__forecast-message"></p>
 		</div>
 
-	</div>
+	</main>
 
 	{{>footer}}
+
+	<video class="video--background" autoplay muted loop>
+		<source src="/public/assets/videos/homepage-background.mp4" type="video/mp4">
+	</video>
+
 	<script src='../js/app.js'></script>
 </body>
 

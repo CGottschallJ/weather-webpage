@@ -1,0 +1,18 @@
+.video--background {
+	position: fixed;
+	z-index: -100;
+}
+
+@media(min-aspect-ratio: 16/9) {
+	.video--background {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media(max-aspect-ratio: 16/9) {
+	.video--background {
+		width: auto;
+		height: 100%;
+	}
+}
