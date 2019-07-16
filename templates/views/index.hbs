@@ -18,12 +18,19 @@
 
 	<main class="main">
 
-		<form action="" class="address-form-block">
-			<input type="text" placeholder="Enter an address" class="address-form-block__input">
-			<button>Search</button>
-		</form>
+		<section class="section--address-form-block">
+			<div class="section--address-form-block__container">
+				<form action="" class="section--address-form-block__form">
+					<input type="text" placeholder="Enter an address" class="section-address-form-block__input">
+					<button class="button--weather-search">Search</button>
+				</form>
+			</div>
+		</section>
 
-		<p class="address-form-block__error-message"></p>
+		<section class="section--error-message-block">
+			<p class="section--error-message-block__error-message"></p>
+		</section>
+
 		<div class="forecast-display-block">
 			<p class="forecast-display-block__loading-message"></p>
 			<p class="forecast-display-block__forecast-message"></p>

@@ -1,5 +1,5 @@
 // Saving the weather form from index.hbs in a variable named weatherForm.
-const weatherForm = document.querySelector('.address-form-block');
+const weatherForm = document.querySelector('.section--address-form-block');
 
 /* Setting a load event listener on the document
 	=> This will contain event listener creations for other elements when the document is loaded.
@@ -15,9 +15,11 @@ function fetchWeather(event) {
 	event.preventDefault();
 
 	// Saving the location search input into a variable named weatherSearchInput
-	const weatherSearchInput = document.querySelector(".address-form-block__input");
+	const weatherSearchInput = document.querySelector(".section-address-form-block__input");
+	// Saving the container for the error message in an variable named errorMessageContainer
+	const errorMessageContainer = document.querySelector(".section--error-message-block");
 	// Saving the element where error messages will be printed into a variable named errorMessageElement
-	const errorMessageElement = document.querySelector(".address-form-block__error-message");
+	const errorMessageElement = document.querySelector(".section--error-message-block__error-message");
 	// Saving the element where the forecast message will be printed into a variable named forecastMessageElement
 	const forecastMessageElement = document.querySelector(".forecast-display-block__forecast-message");
 	// Saving the element where the loading message will be printed into a variable named loadingMessageElement
@@ -42,9 +44,13 @@ function fetchWeather(event) {
 			if (data.error) {
 				loadingMessageElement.textContent = '';
 				errorMessageElement.textContent = data.error;
+				errorMessageContainer.style.display = 'block';
+
 			} else {
 				loadingMessageElement.textContent = '';
 				forecastMessageElement.textContent = data.forecast;
+				errorMessageContainer.style.display = 'none';
+
 			}
 		});
 }

@@ -2,7 +2,7 @@
 /* --- BODY --- */
 
 body {
-	background-color: #f1f0f4;
+	background-color: #ffffff;
 	font-family: sans-serif;
 	overflow: hidden;
 }
@@ -37,6 +37,9 @@ footer {
 
 main {
 	/* Make base mobile changes to the footer tags here */
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	padding: 15px; 
 	box-sizing: border-box;
 	margin-top: 50px; /* Height of the header */
@@ -44,12 +47,20 @@ main {
 	height: calc(100vh - 100px); /* Total view height minus the height of the header and footer combined */
 }
 
+/* --- SECTION --- */
+
+section {
+
+	/* Make base mobile changes to the section tags here */
+
+}
+
 /* --- H ELEMENTS --- */
 
 h1 {
-	font-size: 20px;
-	color: #f1f0f4;
-	text-shadow: 1px 1px #524b68;
+	font-size: 22px;
+	color: #524b68;
+	text-shadow: .5px .5px #7a857a;
 }
 
 h2 {
@@ -70,4 +81,38 @@ h5 {
 
 h6 {
 	/* Make base mobile changes to h6 tags here */
+}
+
+/* --- INPUTS --- */
+
+input {
+	width: 85%;
+	height: 50px;
+	background-color: #f1f0f4;
+	border: none;
+	font-size: 16px;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+input:focus {
+	outline: none;
+}
+
+/* --- BUTTON --- */
+
+button {
+	background-color: #9f97b4;
+	height: 45px;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+button:active {
+	background-color: #2f2b3b;
+}
+
+button:focus {
+	outline: none;
 }
