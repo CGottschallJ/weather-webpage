@@ -14,3 +14,9 @@ This website was created to practice working with node.js, express.js, and APIs.
 | \#531a13 red-dark          | \#233343 blue-dark          | \#2f2b3b purple-dark          | \#313531 gray-dark          | \#624a04 yellow-dark          | \#445511 green-dark          |
 | \#150705 red-xtra-dark     | \#090d11 blue-xtra-dark     | \#0c0b0f purple-xtra-dark     | \#0c0d0c gray-xtra-dark     | \#191301 yellow-xtra-dark     | \#111504 green-xtra-dark     |
 
+
+## Development
+To run in development, use the command `npm run dev`
+
+## Production
+To run in production, use the command `npm run`
